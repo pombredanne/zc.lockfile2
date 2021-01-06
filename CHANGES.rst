@@ -1,8 +1,41 @@
 Change History
 ***************
 
-1.3.0 (unreleased)
+2.1 (unreleased)
+================
+
+- Nothing changed yet.
+
+
+2.0 (2019-08-08)
+================
+
+- Extracted new ``SimpleLockFile`` that removes implicit behavior
+  writing to the lock file, and instead allows a subclass to define
+  that behavior.
+  (`#15 <https://github.com/zopefoundation/zc.lockfile/issues/15>`_)
+
+- ``SimpleLockFile`` and thus ``LockFile`` are now new-style classes.
+  Any clients relying on ``LockFile`` being an old-style class will
+  need to be adapted.
+
+- Drop support for Python 3.4.
+
+- Add support for Python 3.8b3.
+
+
+1.4 (2018-11-12)
+================
+
+- Claim support for Python 3.6 and 3.7.
+
+- Drop Python 2.6 and 3.3.
+
+
+1.3.0 (2018-04-23)
 ==================
+
+- Stop logging failure to acquire locks. Clients can do that if they wish.
 
 - Claim support for Python 3.4 and 3.5.
 
